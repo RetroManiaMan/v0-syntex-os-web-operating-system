@@ -7,24 +7,10 @@
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+v0 by Vercel version of SyntexOS. Much cleaner and more functional. Project made possible by Vercel!
 
 ## Deployment
 
 Your project is live at:
 
-**[https://vercel.com/raphaels-projects-6f7aafd0/v0-syntex-os-web-operating-system](https://vercel.com/raphaels-projects-6f7aafd0/v0-syntex-os-web-operating-system)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/Et0oY7tEnlz](https://v0.app/chat/projects/Et0oY7tEnlz)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Check out Vercel's v0 at (https://v0.app/)
