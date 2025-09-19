@@ -80,10 +80,16 @@ class SettingsManager {
   private listeners: Array<(settings: SystemSettings) => void> = []
 
   constructor() {
-    this.loadSettings()
+    if (typeof window !== "undefined") {
+      this.loadSettings()
+    }
   }
 
   loadSettings(): void {
+    if (typeof window === "undefined" || typeof localStorage === "undefined") {
+      return
+    }
+
     try {
       const saved = localStorage.getItem("syntex-settings")
       if (saved) {
@@ -97,6 +103,10 @@ class SettingsManager {
   }
 
   saveSettings(): void {
+    if (typeof window === "undefined" || typeof localStorage === "undefined") {
+      return
+    }
+
     try {
       localStorage.setItem("syntex-settings", JSON.stringify(this.settings))
       this.applySettings()
@@ -137,6 +147,10 @@ class SettingsManager {
   }
 
   private applySettings(): void {
+    if (typeof window === "undefined" || typeof document === "undefined") {
+      return
+    }
+
     const root = document.documentElement
 
     if (this.settings.theme === "auto") {
